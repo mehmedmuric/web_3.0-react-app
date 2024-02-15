@@ -10,7 +10,8 @@ import { shortenAddress } from "../utils/shortenAddress";
 const commonStyles = "min-h-[70px] sm:px-0 px-2 sm:min-w-[120px] flex justify-center items-center border-[0.5px] border-gray-400 text-sm font-light text-white";
 
 const Welcome = () => {
-  const { currentAccount, connectWallet, handleChange, sendTransaction, formData, isLoading } = useContext(TransactionContext);
+  // const {connectWallet, handleChange, sendTransaction, formData, isLoading } = useContext(TransactionContext);
+  
 
   const Input = ({placeholder, name, value, type, handleChange}) => (
     <input 
@@ -42,7 +43,7 @@ const Welcome = () => {
             Explore the crypto world. Buy and sell cryptocurrencies easily.
           </p>
             <button 
-            type="button" onClick={connectWallet} 
+            // type="button" onClick={connectWallet} 
             className="
             flex flex-row justify-center items-center my-5 
             bg-[#2952e3] p-3 rounded-full cursor-pointer hover:bg-[#2546bd]"
@@ -69,7 +70,7 @@ const Welcome = () => {
               </div>
               <div>
                 <p className="text-white font-light text-sm">
-                  {shortenAddress(currentAccount)}
+                  {/* {shortenAddress(currentAccount)} */}
                 </p>
                 <p className="text-blue-800 font-semibold text-lg">
                   Ethereum
